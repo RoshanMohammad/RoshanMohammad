@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+button{
+    height: 100px;
+    width: 150px;
+    border-radius:1rem;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    text-transform: uppercase;
+    background:#00000062;
+}
+button:hover{
+    animation: shake 0.5s linear 1;
+}
+
+@keyframes shake {
+    0%{
+        transform: translateX(10px);
+    }
+    10%{
+        transform: translateX(-10px);
+    }
+    20%{
+        transform: translateX(10px);
+    }
+    30%{
+        transform: translateX(-10px);
+    }
+    40%{
+        transform: translateX(10px);
+    }
+    50%{
+        transform: translateX(-10px);
+    }
+    60%{
+        transform: translateX(10px);
+    }
+    70%{
+        transform: translateX(-10px);
+    }
+    80%{
+        transform: translateX(10px);
+    }
+    90%{
+        transform: translateX(-10px);
+    }
+    100%{
+        transform: translateX(10px);
+    }
+}
