@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>PORTFOLIO</title>
+    <style>
+      #world{
+        position: absolute;
+        height: auto;
+        width: auto;
+        background: transparent;
+      }
+    </style>
+</head>
+<body>
+  <canvas id='world'></canvas>
+    <div class="top">
+        <div class="t1">
+            <h1><a href="#">Roshan.</a></h1>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#" id="head">skills</a>           
+            <a href="#" id="head">Portfolio</a>           
+            <a href="#" id="head">Qualification</a>           
+            <a href="#" id="head">About Me</a>
+        </nav>
+    </div>
+    <div class="mid">
+        <div class="m1">
+        <p><span class="u"><a href="#">UI/UX</a></span><span> Designer.</span></p>
+        <h1>Hi.. I am Roshan<br>haveing good skill in<br><strong>'WEB DEVLOPMENT'</strong></h1>
+        </div>
+        <div class="m2">
+            <img src="ro.png">
+        </div>
+    </div>
+    <div class="center">
+        <h1><u>skills</u></h1>
+    </div>
+    <div class="mid2">
+      <a href="https://html.com/" target="_blank">
+        <div class="card1">
+         <div class="front">
+           <h1>HTML</h1>
+         </div>
+         <div class="back">
+         </div>
+      </div></a>  
+      <a href="#"><div class="card2">
+        <div class="front2">
+        <h1>CSS</h1>
+         </div>
+         <div class="back2">
+         </div>
+      </div></a>
+      <a href="#" id="skills"><div class="card3">
+        <div class="front3">
+        <h1>#JS</h1>
+         </div>
+         <div class="back3">
+         </div>
+      </div></a> 
+      <a href="#"><div class="card4">
+        <div class="front4">
+        <h1>#BS</h1>
+         </div>
+         <div class="back4">
+         </div>
+      </div> </a>
+      <a href="#"><div class="card5">
+        <div class="front5">
+        <h1>REACT</h1>
+         </div>
+         <div class="back5">
+         </div>
+      </div></a> 
+      <a href="#"><div class="card6">
+        <div class="front6">
+        <h1>python</h1>
+         </div>
+         <div class="back6">
+         </div>
+      </div></a> 
+    </div>
+    <div class="center2">
+      <h1><u>QUALIFICATION</u></h1>
+    </div>
+    <div class="mid3">
+      <div class="school">
+        <h1 id="head0">SCHOOLING &triangledown;</h1>
+        <ul id="drop0">
+          <li><span>SCHOOL:</span> Sk.Public school</li>
+          <li><span>PASSED OUT:</span> 2015</li>
+        </ul>
+      </div>
+      <div class="higher">
+        <h1 id="head1">HIGHER STUDIES &triangledown;</h1>
+        <ul id="drop1">
+          <li><span>COLLEGE:</span> Narayana Junior college</li>
+          <li><span>STREAM:</span> MPC</li>
+          <li><span>DURATION:</span>2015-2017</li>
+          <li><span>PASSED OUT:</span> 2017</li>
+        </ul>
+      </div>
+      <div class="grad">
+        <h1 id="head2">GRADUATION &triangledown;</h1>
+        <ul id="drop2">
+          <li><span>COLLEGE:</span> Ramachandra college of Engineering</li>
+          <li><span>STREAM:</span> (EEE)Eletrical and Electronics</li>
+          <li><span>DURATION:</span> 2017-2021</li>
+          <li><span>PASSED OUT:</span> 2021</li>
+        </ul>
+      </div>
+    </div>
+<script>
+  $(document).ready(function(){
+    $("#head0").click (function(){
+      $("#drop0").slideToggle();
+    });
+  });
+  $(document).ready(function(){
+    $("#head1").click(function(){
+      $("#drop1").slideToggle();
+    });
+  });
+  $(document).ready(function(){
+    $("#head2").click(function(){
+      $("#drop2").slideToggle();
+    });
+  });
+</script>
+    <div class="center3">
+      <h1><u>INTEREST</u></h1>
+    </div>
+    <div class="mid4">
+      <a href="#"><div class="card7">
+        <div class="front7">
+        <h1>PLAYING SOCCER</h1>
+      </div>
+      <div class="back7">
+      </div>
+    </div></a>  
+      <a href="#"><div class="card8">
+      <div class="front8">
+      <h1>LEARNING<br>NEW SKILLS</h1>
+      </div>
+      <div class="back8">
+      </div>
+    </div></a>  
+      <a href="#"><div class="card9">
+      <div class="front9">
+      <h1>WORKOUT</h1>
+      </div>
+      <div class="back9 ">
+      </div>
+    </div></a>  
+    </div>
+    <div class="footer">
+      <form action="#">
+        <h1>CONTACT ME</h1>
+        <br>
+        <input type="text" name="" placeholder="NAME">
+        <input type="email" name="" placeholder="EMAIL">
+        <input type="phone" name="" placeholder="PHONE">
+        <input type="sub" name="" placeholder="SUBJECT">
+        <input type="submit" value="submit">
+      </form>
+    </div>
+    <div class="copyright">
+      <h1>@copyright Designed by Roshan </h1>
+    </div>
+    <!-- <script>
+      // One of my first <canvas> experiments, woop! :D 
+  
+      var SCREEN_WIDTH = window.innerWidth;
+      var SCREEN_HEIGHT = window.innerHeight;
+  
+      var RADIUS = 70;
+  
+      var RADIUS_SCALE = 1;
+      var RADIUS_SCALE_MIN = 1;
+      var RADIUS_SCALE_MAX = 1.5;
+  
+      var QUANTITY = 25;
+  
+      var canvas;
+      var context;
+      var particles;
+  
+      var mouseX = SCREEN_WIDTH * 0.5;
+      var mouseY = SCREEN_HEIGHT * 0.5;
+      var mouseIsDown = false;
+  
+      function init() {
+  
+          canvas = document.getElementById('world');
+  
+          if (canvas && canvas.getContext) {
+              context = canvas.getContext('2d');
+  
+              // Register event listeners
+              window.addEventListener('mousemove', documentMouseMoveHandler, false);
+              window.addEventListener('mousedown', documentMouseDownHandler, false);
+              window.addEventListener('mouseup', documentMouseUpHandler, false);
+              document.addEventListener('touchstart', documentTouchStartHandler, false);
+              document.addEventListener('touchmove', documentTouchMoveHandler, false);
+              window.addEventListener('resize', windowResizeHandler, false);
+  
+              createParticles();
+  
+              windowResizeHandler();
+  
+              setInterval(loop,1000 / 60);
+          }
+      }
+  
+      function createParticles() {
+          particles = [];
+  
+          for (var i = 0; i < QUANTITY; i++) {
+              var particle = {
+                  size: 1,
+                  position: { x: mouseX, y: mouseY },
+                  offset: { x: 0, y: 0 },
+                  shift: { x: mouseX, y: mouseY },
+                  speed: 0.01 + Math.random() * 0.04,
+                  targetSize: 1,
+                  fillColor: '#' + (Math.random() * 0x404040 + 0xaaaaaa | 0).toString(16),
+                  orbit: RADIUS * .5 + (RADIUS * .5 * Math.random())
+              };
+  
+              particles.push(particle);
+          }
+      }
+  
+      function documentMouseMoveHandler(event) {
+          mouseX = event.clientX - (window.innerWidth - SCREEN_WIDTH) * .5;
+          mouseY = event.clientY - (window.innerHeight - SCREEN_HEIGHT) * .5;
+      }
+  
+      function documentMouseDownHandler(event) {
+          mouseIsDown = false;
+      }
+  
+      function documentMouseUpHandler(event) {
+          mouseIsDown = false;
+      }
+  
+      function documentTouchStartHandler(event) {
+          if (event.touches.length == 1) {
+              event.preventDefault();
+  
+              mouseX = event.touches[0].pageX - (window.innerWidth - SCREEN_WIDTH) * .5;
+              mouseY = event.touches[0].pageY - (window.innerHeight - SCREEN_HEIGHT) * .5;
+          }
+      }
+  
+      function documentTouchMoveHandler(event) {
+          if (event.touches.length == 1) {
+              event.preventDefault();
+  
+              mouseX = event.touches[0].pageX - (window.innerWidth - SCREEN_WIDTH) * .5;
+              mouseY = event.touches[0].pageY - (window.innerHeight - SCREEN_HEIGHT) * .5;
+          }
+      }
+  
+      function windowResizeHandler() {
+          SCREEN_WIDTH = window.innerWidth;
+          SCREEN_HEIGHT = window.innerHeight;
+  
+          canvas.width = SCREEN_WIDTH;
+          canvas.height = SCREEN_HEIGHT;
+      }
+  
+      function loop() {
+  
+          if (mouseIsDown) {
+              RADIUS_SCALE += (RADIUS_SCALE_MAX - RADIUS_SCALE) * (0.02);
+          } else {
+              RADIUS_SCALE -= (RADIUS_SCALE - RADIUS_SCALE_MIN) * (0.02);
+          }
+  
+          RADIUS_SCALE = Math.min(RADIUS_SCALE, RADIUS_SCALE_MAX);
+  
+          // Reduce the opacity of the background to create a trailing effect
+          context.fillStyle = 'rgba(0,0,0,0.05)';
+          context.fillRect(0, 0, context.canvas.width, context.canvas.height);
+  
+          for (i = 0, len = particles.length; i < len; i++) {
+              var particle = particles[i];
+  
+              var lp = { x: particle.position.x, y: particle.position.y };
+  
+              // Rotation
+              particle.offset.x += particle.speed;
+              particle.offset.y += particle.speed;
+  
+              // Follow mouse with some lag
+              particle.shift.x += (mouseX - particle.shift.x) * (particle.speed);
+              particle.shift.y += (mouseY - particle.shift.y) * (particle.speed);
+  
+              // Apply position
+              particle.position.x = particle.shift.x + Math.cos(i + particle.offset.x) * (particle.orbit * RADIUS_SCALE);
+              particle.position.y = particle.shift.y + Math.sin(i + particle.offset.y) * (particle.orbit * RADIUS_SCALE);
+  
+              // Limit to screen bounds
+              particle.position.x = Math.max(Math.min(particle.position.x, SCREEN_WIDTH), 0);
+              particle.position.y = Math.max(Math.min(particle.position.y, SCREEN_HEIGHT), 0);
+  
+              particle.size += (particle.targetSize - particle.size) * 0.05;
+  
+              if (Math.round(particle.size) == Math.round(particle.targetSize)) {
+                  particle.targetSize = 1 + Math.random() * 7;
+              }
+  
+              context.beginPath();
+              context.fillStyle = particle.fillColor;
+              context.strokeStyle = particle.fillColor;
+              context.lineWidth = particle.size;
+              context.moveTo(lp.x, lp.y);
+              context.lineTo(particle.position.x, particle.position.y);
+              context.stroke();
+              context.arc(particle.position.x, particle.position.y, particle.size / 2, 0, Math.PI * 2, true);
+              context.fill();
+          }
+      }
+  
+      window.onload = init;
+      </script> -->
+</body>
+</html>
